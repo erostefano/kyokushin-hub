@@ -1,10 +1,23 @@
 import React from 'react';
 import {taikyokuSonoIchi} from "./katas/katas";
-import {Card, CardContent} from "@mui/material";
+import {AppBar, Card, CardContent, IconButton, Toolbar} from "@mui/material";
+import MenuIcon from '@mui/icons-material/Menu';
 
 function App() {
     return (
         <>
+            <AppBar position="static">
+                <Toolbar>
+                    <IconButton
+                        size="large"
+                        edge="start"
+                        color="inherit"
+                        aria-label="menu"
+                    >
+                        <MenuIcon/>
+                    </IconButton>
+                </Toolbar>
+            </AppBar>
             <header>
                 <h1 className="text-3xl m-4">
                     {taikyokuSonoIchi.name} ({taikyokuSonoIchi.grade})
