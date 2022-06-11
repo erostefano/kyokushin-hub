@@ -1,11 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {taikyokuSonoIchi} from "./katas/katas";
-import {AppBar, Card, CardContent, IconButton, Toolbar} from "@mui/material";
+import {AppBar, Card, CardContent, Drawer, IconButton, Toolbar} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 
 function App() {
+    const [drawer, setDrawer] = useState(false);
     return (
         <>
+            <Drawer
+                open={drawer}
+                onClose={() => setDrawer(false)}
+            >
+                asdf
+                asdf
+                asdf
+            </Drawer>
             <AppBar position="static">
                 <Toolbar>
                     <IconButton
@@ -13,6 +22,7 @@ function App() {
                         edge="start"
                         color="inherit"
                         aria-label="menu"
+                        onClick={() => setDrawer(true)}
                     >
                         <MenuIcon/>
                     </IconButton>
