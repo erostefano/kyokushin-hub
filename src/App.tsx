@@ -5,15 +5,21 @@ import {Card, CardContent} from "@mui/material";
 function App() {
     return (
         <>
-            <h1 className="text-3xl m-4">
-                {taikyokuSonoIchi.name} ({taikyokuSonoIchi.grade})
-            </h1>
+            <header>
+                <h1 className="text-3xl m-4">
+                    {taikyokuSonoIchi.name} ({taikyokuSonoIchi.grade})
+                </h1>
+            </header>
             <main>
-                <section className="flex flex-wrap">
+                <section className="flex flex-wrap print:block">
                     {
                         taikyokuSonoIchi.steps.map((step, index) =>
-                            <Card variant="outlined" className="basis-1/3 m-4">
+                            <Card
+                                variant="outlined"
+                                className="basis-[300px] grow shrink p-4 print:break-inside-avoid print:w-[50%] print:float-left"
+                            >
                                 <img
+                                    alt=''
                                     src="https://www.sonova.com/sites/default/files/styles/header_image_tablet/public/2019-07/shutterstock_253580635_square.jpg?itok=TwBeTHTY"
                                 />
                                 <CardContent>
@@ -24,7 +30,6 @@ function App() {
                             </Card>
                         )
                     }
-
                 </section>
             </main>
         </>
