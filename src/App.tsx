@@ -70,7 +70,7 @@ function App() {
                             >
                                 <img
                                     alt=''
-                                    src="https://www.sonova.com/sites/default/files/styles/header_image_tablet/public/2019-07/shutterstock_253580635_square.jpg?itok=TwBeTHTY"
+                                    src={`/taikyokuSonoIchi/vlcsnap-${index}.png`}
                                 />
                                 <CardContent>
                                     <p>
