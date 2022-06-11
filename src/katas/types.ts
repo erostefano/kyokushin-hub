@@ -1,8 +1,3 @@
-export enum Grade {
-    TENTH_KYU = '10. Kyu',
-    NINTH_KYU = '9. Kyu'
-}
-
 export enum Stance {
     FRONT = 'Zenkutsu Dachi',
     RIDING = 'Kiba Dachi'
@@ -49,6 +44,5 @@ export interface Step {
 
 export interface Kata {
     name: string,
-    grade: Grade,
     steps: Step[]
 }

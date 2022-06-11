@@ -1,7 +1,6 @@
-import {Arm, Degree, Direction, Grade, Kata, Level, Stance, Type} from "./types";
+import {Arm, Degree, Direction, Kata, Level, Stance, Type} from "./types";
 
 export const taikyokuSonoIchi: Kata = {
-    grade: Grade.TENTH_KYU,
     name: 'Taikyoku Sono Ichi',
     steps: [
         {

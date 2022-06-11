@@ -51,7 +51,7 @@ function App() {
             </AppBar>
             <header>
                 <h1 className="text-3xl m-4">
-                    {taikyokuSonoIchi.name} ({taikyokuSonoIchi.grade})
+                    {taikyokuSonoIchi.name}
                 </h1>
             </header>
             <main>
