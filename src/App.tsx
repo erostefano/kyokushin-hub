@@ -53,7 +53,7 @@ function App() {
                 </Toolbar>
             </AppBar>
             <main>
-                <section className="flex flex-wrap print:block">
+                <section className="flex flex-wrap m-2 print:block">
                     {
                         taikyokuSonoIchi.steps.map((step, index) =>
                             <Card
