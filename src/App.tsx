@@ -14,6 +14,7 @@ import {
     Toolbar
 } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 function App() {
     const [drawer, setDrawer] = useState(false);
@@ -22,6 +23,7 @@ function App() {
             <Drawer
                 open={drawer}
                 onClose={() => setDrawer(false)}
+                className="h-full"
             >
                 <List>
                     <ListSubheader>Katas</ListSubheader>
@@ -35,6 +37,12 @@ function App() {
                         </ListItem>
                     )}
                 </List>
+                <span className="grow"></span>
+                <nav className="sticky">
+                    <IconButton href="https://twitter.com/StefanoEro" target="_blank">
+                        <TwitterIcon/> KickinDev
+                    </IconButton>
+                </nav>
             </Drawer>
             <AppBar position="static">
                 <Toolbar>
