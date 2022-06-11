@@ -1,6 +1,18 @@
 import React, {useState} from 'react';
-import {taikyokuSonoIchi} from "./katas/katas";
-import {AppBar, Card, CardContent, Drawer, IconButton, Toolbar} from "@mui/material";
+import {katas, taikyokuSonoIchi} from "./katas/katas";
+import {
+    AppBar,
+    Card,
+    CardContent,
+    Drawer,
+    IconButton,
+    List,
+    ListItem,
+    ListItemButton,
+    ListItemText,
+    ListSubheader,
+    Toolbar
+} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 
 function App() {
@@ -11,9 +23,18 @@ function App() {
                 open={drawer}
                 onClose={() => setDrawer(false)}
             >
-                asdf
-                asdf
-                asdf
+                <List>
+                    <ListSubheader>Katas</ListSubheader>
+                    {katas.map(kata =>
+                        <ListItem>
+                            <ListItemButton
+                                onClick={() => setDrawer(false)}
+                            >
+                                <ListItemText>{kata.name}</ListItemText>
+                            </ListItemButton>
+                        </ListItem>
+                    )}
+                </List>
             </Drawer>
             <AppBar position="static">
                 <Toolbar>

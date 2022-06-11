@@ -162,3 +162,5 @@ export const taikyokuSonoIchi: Kata = {
         }
     ]
 }
+
+export const katas = [taikyokuSonoIchi];
