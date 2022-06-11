@@ -46,21 +46,19 @@ function App() {
                         onClick={() => setDrawer(true)}
                     >
                         <MenuIcon/>
+                        <h1 className="text-xl ml-4">
+                            {taikyokuSonoIchi.name}
+                        </h1>
                     </IconButton>
                 </Toolbar>
             </AppBar>
-            <header>
-                <h1 className="text-3xl m-4">
-                    {taikyokuSonoIchi.name}
-                </h1>
-            </header>
             <main>
                 <section className="flex flex-wrap print:block">
                     {
                         taikyokuSonoIchi.steps.map((step, index) =>
                             <Card
                                 variant="outlined"
-                                className="basis-[300px] grow shrink p-4 print:break-inside-avoid print:w-[50%] print:float-left"
+                                className="basis-[300px] grow shrink m-2 print:break-inside-avoid print:w-[50%] print:float-left"
                             >
                                 <img
                                     alt=''
